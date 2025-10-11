@@ -10,7 +10,80 @@
 </head>
 
 <body>
-    <script src="scripts/script.js"></script>
+
+    <header>
+        <nav>
+            <a href="Home.html">Meraki VitalSync</a>
+            <ul>
+                <li><a href="Home.html">Início</a></li>
+                <li><a href="SobreNos.html">Sobre Nós</a></li>
+                <li><a href="Catalogo.html">Produtos</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Acesse sua Conta</h1>
+            <p>Faça login para acessar o painel de gestão Meraki VitalSync</p>
+
+            <form action="#" method="post">
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lembrar" name="lembrar">
+                    <label for="lembrar">Lembrar de mim</label>
+                </div>
+
+                <button type="submit">Entrar</button>
+            </form>
+
+            <div>
+                <p><a href="#recuperar-senha">Esqueceu sua senha?</a></p>
+                <p>Não tem uma conta? <a href="#cadastro">Cadastre-se</a></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Login Corporativo</h2>
+            <p>Empresas parceiras podem acessar o painel administrativo completo com relatórios e análises detalhadas.</p>
+            <button>Acesso Corporativo</button>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>&copy; 2025 Meraki Vitalsync. Todos os direitos reservados.</p>
+            <nav>
+                <ul>
+                    <li><a href="TermosDeUso.html">Termos de Uso</a></li>
+                    <li><a href="#privacidade">Política de Privacidade</a></li>
+                    <li><a href="Suporte.html">Suporte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
 </body>
 
 </html>

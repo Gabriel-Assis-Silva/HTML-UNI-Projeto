@@ -10,7 +10,127 @@
 </head>
 
 <body>
-    <script src="scripts/script.js"></script>
+
+    <header>
+        <nav>
+            <a href="Home.html">Meraki VitalSync</a>
+            <ul>
+                <li><a href="Home.html">Início</a></li>
+                <li><a href="SobreNos.html">Sobre Nós</a></li>
+                <li><a href="Catalogo.html">Produtos</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Entre em Contato</h1>
+            <p>Estamos prontos para transformar a gestão de bem-estar da sua empresa. Fale conosco!</p>
+        </section>
+
+        <section>
+            <h2>Formulário de Contato</h2>
+
+            <form action="#" method="post">
+                <div>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div>
+                    <label for="empresa">Empresa:</label>
+                    <input type="text" id="empresa" name="empresa" required>
+                </div>
+
+                <div>
+                    <label for="email">E-mail Corporativo:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+
+                <div>
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione um assunto</option>
+                        <option value="cotacao">Solicitar Cotação</option>
+                        <option value="demonstracao">Agendar Demonstração</option>
+                        <option value="suporte">Suporte Técnico</option>
+                        <option value="parceria">Parcerias</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                </div>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Informações de Contato</h2>
+
+            <article>
+                <h3>Vendas e Parcerias</h3>
+                <p>E-mail: vendas@merakivitalsync.com.br</p>
+                <p>Telefone: (11) 3000-0000</p>
+            </article>
+
+            <article>
+                <h3>Suporte Técnico</h3>
+                <p>E-mail: suporte@merakivitalsync.com.br</p>
+                <p>Telefone: (11) 3000-0001</p>
+                <p>Horário: Segunda a Sexta, 8h às 18h</p>
+            </article>
+
+            <article>
+                <h3>Endereço</h3>
+                <p>Meraki VitalSync Tecnologia Ltda.</p>
+                <p>Av. Paulista, 1000 - Conjunto 500</p>
+                <p>Bela Vista, São Paulo - SP</p>
+                <p>CEP: 01310-100</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Horário de Atendimento</h2>
+            <p>Segunda a Sexta-feira: 8h às 18h</p>
+            <p>Sábados: 9h às 13h</p>
+            <p>Domingos e Feriados: Fechado</p>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>&copy; 2025 Meraki Vitalsync. Todos os direitos reservados.</p>
+            <nav>
+                <ul>
+                    <li><a href="TermosDeUso.html">Termos de Uso</a></li>
+                    <li><a href="#privacidade">Política de Privacidade</a></li>
+                    <li><a href="Suporte.html">Suporte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
 </body>
 
 </html>
