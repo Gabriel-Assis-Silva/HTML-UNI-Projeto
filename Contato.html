@@ -8,7 +8,6 @@
 </head>
 
 <body>
-
     <header>
         <nav>
             <a href="Home.html">Meraki VitalSync</a>
@@ -22,17 +21,17 @@
     </header>
 
     <main>
-        <section>
+        <header>
             <h1>Entre em Contato</h1>
             <p>Estamos prontos para transformar a gestão de bem-estar da sua empresa. Fale conosco!</p>
-        </section>
+        </header>
 
         <section>
             <h2>Formulário de Contato</h2>
 
             <form action="#" method="post">
                 <div>
-                    <label for="nome">Nome Completo:</label>
+                    <label for="nome">Nome Completo: |</label>
                     <input type="text" id="nome" name="nome" required>
                 </div>
 
@@ -48,7 +47,7 @@
 
                 <div>
                     <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone" required>
+                    <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}"  required>
                 </div>
 
                 <div>
