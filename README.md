@@ -1,30 +1,76 @@
-# HTML-UNI-Projeto
+# Meraki VitalSync | Website E-commerce  
+## 1ª Entrega – Estrutura HTML
 
-## Objetivos
+---
 
+### 1. Visão Geral do Projeto
 
-## Tema
+O projeto **Meraki VitalSync** consiste no desenvolvimento de um website e-commerce para uma marca fictícia especializada na venda de **pulseiras inteligentes (Fitness Trackers)**.  
 
+A **Primeira Entrega** teve como objetivo a criação da **estrutura semântica completa em HTML** de todas as páginas essenciais, garantindo conformidade com os padrões **W3C**.  
+Esta etapa estabelece a base para as próximas fases de desenvolvimento: **design visual (CSS)** e **funcionalidades interativas (JavaScript)**.
 
-## Divisão de Funções.
-Integrante	        | Função
+---
 
-Gabriel Bryan	    | Desenvolvimento da Página Inicial (Index);
+### 2. O Conceito (O “Mini-Mundo”)
 
-Nicolas Petrimperni	| Desenvolvimento da Página de Catálogo de Produtos;
+O projeto foi planejado como um pequeno ecossistema digital com os seguintes pilares:
 
-Kauam Alves	        | Desenvolvimento da Página de Planos / Assinaturas;
+- **Produto Central:** Venda e divulgação de pulseiras inteligentes, com foco em saúde, monitoramento e bem-estar.  
+- **Coerência de Marca:** Garantir que todas as páginas apresentem um propósito claro e se integrem de forma coesa, mantendo uma identidade visual e comunicativa uniforme.  
+- **Base Sólida:** Entregar uma estrutura HTML limpa, validada e pronta para receber estilização e funcionalidades futuras.
 
-Sidney Marciel	    | Desenvolvimento da Página de Contato;
+---
 
-Larissa Silva	    | Desenvolvimento da Página Sobre Nós;
+### 3. Equipe e Divisão de Funções (1ª Entrega – Foco em HTML)
 
-Victor Hugo	        | Desenvolvimento da Página de Login e Cadastro;
+| Membro da Equipe     | Responsabilidade Principal (Página)                         | Foco Tecnológico                |
+|-----------------------|-------------------------------------------------------------|---------------------------------|
+| Gabriel Bryan         | Página Inicial (`index.html`)                               | Estrutura HTML                  |
+| Nicolas Petrimperni   | Catálogo de Produtos (`catalogo.html`)                      | Estrutura HTML                  |
+| Kaum Alves            | Planos / Assinaturas (`planos.html`)                        | Estrutura HTML                  |
+| Sidney Marciel        | Página de Contato (`contato.html`)                          | Estrutura HTML                  |
+| Larissa Silva         | Página Sobre Nós (`sobre_nos.html`)                         | Estrutura HTML                  |
+| Victor Hugo           | Página de Login e Cadastro (`login.html`)                   | Estrutura HTML                  |
+| Guilherme Barros      | Página de Suporte / FAQ (`suporte_faq.html`)                | Estrutura HTML                  |
+| Gabriel de Assis      | Páginas de Políticas (Termos de Uso, Trabalhe Conosco) e Revisão Geral | Estrutura HTML / Documentação |
+| Gabriel Pedro         | Planejamento da Padronização Visual (CSS - fase futura)     | Planejamento CSS                |
 
-Guilherme Barros	| Desenvolvimento da Página de Suporte / FAQ;
+---
 
-Gabriel Pedro	    | Futuro Responsável pela Padronização Visual (CSS);
+### 4. Escopo da 1ª Entrega (Páginas Desenvolvidas)
 
-Gabriel de Assis	| Desenvolvimento de Páginas de Políticas (Termos de Uso / Trabalhe Conosco) e Revisão / Documentação;
+Foram desenvolvidas dez páginas essenciais para o e-commerce:
 
-Tharick Dias Souza  | Assistência Geral;
+- `index.html` — Página Inicial  
+- `catalogo.html` — Catálogo de Produtos  
+- `planos.html` — Planos / Assinaturas  
+- `contato.html` — Página de Contato  
+- `sobre_nos.html` — Sobre Nós  
+- `login.html` — Login e Cadastro  
+- `suporte_faq.html` — Suporte / FAQ  
+- `termos_de_uso.html` — Termos de Uso  
+- `trabalhe_conosco.html` — Trabalhe Conosco  
+- Outras páginas complementares de política e suporte.
+
+---
+
+### 5. Status Técnico (Validação W3C)
+
+- **Status Geral:** Aprovado  
+  A estrutura HTML principal de todas as páginas foi validada e está em conformidade com os padrões W3C.
+
+- **Desvio Documentado:**  
+  Foi identificado um aviso de não conformidade referente ao **widget de Libras (acessibilidade)**, devido ao uso de atributos proprietários (`vw-*`) fornecidos por terceiros.  
+  O componente foi mantido, pois é essencial para os recursos de acessibilidade do projeto.
+
+- **Conclusão:**  
+  A base HTML está sólida, validada e pronta para a próxima etapa de desenvolvimento — aplicação de CSS e integração de funcionalidades em JavaScript.
+
+---
+
+### 6. Documentação Complementar
+
+Para mais informações sobre o andamento do projeto, consulte:
+- **Diário de Bordo do Projeto** – Detalhes sobre o processo de desenvolvimento e desafios enfrentados.  
+- **Relatório de Orçamento** – Informações sobre hospedagem e registro de domínio (`merakivitalsync.com`).
