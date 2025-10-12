@@ -28,5 +28,4 @@ Attributes for element div:
 Global attributes
 ```
 
-O resto do HTML passou pelo validator, sem erros, a libra, mesmo tendo um erro, funciona, mesmo que não seja recomendado, mas não afeta a funcionalidade.
-E é provavel que manipulação do plugin libras pode resultar no plugin em parar de funcionar.
+O resto do HTML passou pelo validator, sem erros, a libra, mesmo tendo um erro, funciona, não é o recomendado, mas não afeta a funcionalidade. E é provavel que manipulação do plugin libras pode resultar no plugin em parar de funcionar, então genuinamente é melhor não tocar.

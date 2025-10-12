@@ -1,7 +1,6 @@
 # Relatório de Orçamento de Hospedagem e Domínio
 
-## Opções de hospedagem web
-Resumo das ofertas brasileiras analisadas (valores em BRL):
+## Opções de hospedagem web:
 - **Hostinger Single** – 10 GB SSD, banda ilimitada para baixo tráfego, SSL grátis, suporte 24h (chat/ticket). Preço inicial R$ 5,99, renovação R$ 23,99.
 - **Hostinger Premium** – 25 GB SSD, mesmo suporte e SSL. Preço inicial R$ 10,99, renovação R$ 38,99.
 - **Hostinger Business** – 50 GB NVMe, suporte 24h, SSL incluso. Preço inicial R$ 13,99, renovação R$ 59,99.
@@ -13,7 +12,8 @@ Resumo das ofertas brasileiras analisadas (valores em BRL):
 - **Locaweb Hospedagem Dedicada** – 120 GB dedicado, banda ilimitada, suporte nacional 24/7. Preço inicial e renovação R$ 49,90.
 
 ## Opções de registro de domínio
-Há uma lista de dominios liberados para VitalSync, .com, .com.br e .br, preços geram em torno de R$40,00 até R$364,00
+Há uma lista de dominios liberados para VitalSync, .com, .com.br e .br, preços geram em torno de R$40,00 até R$364,00 
+(.com.br, 1 ano | 10 anos)
 
 ## Recomendação
 A combinação sugerida é contratar **Locaweb Hospedagem I ou II** com domínio **.com**. O provedor entrega SSD ilimitado, SSL e suporte nacional 24/7 com custo baixo e previsível, enquanto o domínio .com garante reconhecimento global sem restrições geográficas.
