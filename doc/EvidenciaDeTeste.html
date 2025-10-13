@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Evidência de Teste - Conformidade HTML</title>
+</head>
+<body>
+    <header>
+        <h1>RELATÓRIO DE EVIDÊNCIA DE TESTE - CONFORMIDADE HTML (1ª ENTREGA)</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Informações do Projeto</h2>
+            <dl>
+                <dt><strong>Projeto:</strong></dt>
+                <dd>Desenvolvimento de Website E-commerce</dd>
+
+                <dt><strong>Tema:</strong></dt>
+                <dd>Pulseira Inteligente (Fitness Tracker)</dd>
+
+                <dt><strong>Marca:</strong></dt>
+                <dd>Meraki VitalSync</dd>
+
+                <dt><strong>Entrega:</strong></dt>
+                <dd>1ª Entrega (Foco na Estrutura HTML)</dd>
+
+                <dt><strong>Ferramenta de Validação:</strong></dt>
+                <dd>W3C Markup Validation Service</dd>
+
+                <dt><strong>Data do Teste:</strong></dt>
+                <dd>12/10/2025</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>1. Objetivo do Teste</h2>
+            <p>Verificar a conformidade do código HTML de todas as páginas integradas do projeto com os padrões do W3C, garantindo a qualidade técnica e a semântica da estrutura básica do site antes da implementação do CSS.</p>
+        </section>
+
+        <section>
+            <h2>2. Resultado da Validação Geral</h2>
+            <p>Com exceção dos erros específicos relacionados à integração do widget de Libras (detalhados abaixo), todo o restante do código HTML do projeto foi aprovado pelo W3C Validator e está em conformidade com os padrões da World Wide Web Consortium. Isso confirma que a estrutura base (cabeçalhos, seções, links, formulários, etc.) das páginas desenvolvidas individualmente está tecnicamente correta.</p>
+        </section>
+
+        <section>
+            <h2>3. Detalhamento dos Erros Encontrados</h2>
+
+            <h3>Ponto de Falha: Integração do Widget de Libras (Acessibilidade)</h3>
+            <p><strong>Natureza do Erro:</strong> Uso de atributos não padrão (proprietários) dentro de elementos &lt;div&gt;.</p>
+
+            <h4>Evidência de Erro (W3C Validator)</h4>
+
+            <article>
+                <h5>HTML Error: Attribute vw not allowed on element div at this point.</h5>
+                <pre>From line 165, column 5; to line 165, column 28
+
+ter&gt;↩↩    &lt;div vw class="enabled"&gt;↩</pre>
+            </article>
+
+            <article>
+                <h5>Error: Attribute vw-access-button not allowed on element div at this point.</h5>
+                <pre>From line 166, column 9; to line 166, column 45
+
+&gt;↩        &lt;div vw-access-button class="active"&gt;&lt;/div&gt;</pre>
+            </article>
+
+            <article>
+                <h5>Error: Attribute vw-plugin-wrapper not allowed on element div at this point.</h5>
+                <pre>From line 167, column 9; to line 167, column 31
+
+&gt;↩        &lt;div vw-plugin-wrapper&gt;↩</pre>
+            </article>
+        </section>
+
+        <section>
+            <h2>4. Análise e Mitigação</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Aspecto</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Causa do Erro</strong></td>
+                        <td>Os atributos vw, vw-access-button e vw-plugin-wrapper são atributos personalizados/proprietários utilizados pelo script do widget de Libras. O W3C Validator não os reconhece como atributos padrão de um elemento &lt;div&gt;, resultando nos erros de validação.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Impacto na Funcionalidade</strong></td>
+                        <td>Baixo. O widget de Libras está funcionando corretamente no site, apesar dos erros de validação.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Risco de Manutenção</strong></td>
+                        <td>Moderado. É altamente provável que qualquer manipulação manual no código do plugin de Libras (linhas 165 a 167) possa resultar na sua inoperabilidade. Recomenda-se evitar a alteração direta deste bloco de código.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Próxima Ação</strong></td>
+                        <td>Por se tratar de um código de terceiros essencial para a acessibilidade, o erro será documentado e aceito nesta entrega. A equipe não deve tentar "corrigir" o código do plugin, mas sim isolá-lo de manipulações futuras.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>5. Conclusão</h2>
+            <p>A 1ª Entrega do projeto alcançou a conformidade técnica em sua estrutura HTML principal. Os erros identificados são restritos a um script de terceiros (widget de Libras), que, embora gere avisos de não conformidade no W3C, está funcionando conforme o esperado. O projeto pode prosseguir para a próxima fase (aplicação do CSS).</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Relatório gerado em 12/10/2025</p>
+    </footer>
+</body>
+</html>
