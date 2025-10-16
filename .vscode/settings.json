@@ -1,9 +1,0 @@
-{
-    "editor.tokenColorCustomizations": {
-        "[nova green]": {
-            "comments": "#b5b5b5"
-        },
-        "comments": "",
-        "textMateRules": []
-    }
-}
