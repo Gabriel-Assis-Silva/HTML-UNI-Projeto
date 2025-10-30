@@ -26,14 +26,14 @@ O projeto foi planejado como um pequeno ecossistema digital com os seguintes pil
 
 | Membro da Equipe      | Responsabilidade Principal (Página)                                    | Foco Tecnológico                |
 |-----------------------|------------------------------------------------------------------------|---------------------------------|
-| Gabriel Bryan         | Página Inicial (`Home.html`)                                           | Estrutura HTML                  |
+| Gabriel Bryan         | Página Inicial (`Home.html` \ `PoliticaDePrivacidade.html`)            | Estrutura HTML                  |
 | Nicolas Petrimperni   | Catálogo de Produtos (`Catalogo.html`)                                 | Estrutura HTML                  |
-| Kaum Alves            | Planos / Assinaturas (`Planos.html`)                                   | Estrutura HTML                  |
+| Kauam Alves            | Planos / Assinaturas (`Planos.html`)                                  | Estrutura HTML                  |
 | Sidney Marciel        | Página de Contato (`Contato.html`)                                     | Estrutura HTML                  |
 | Larissa Silva         | Página Sobre Nós (`SobreNos.html`)                                     | Estrutura HTML                  |
 | Victor Hugo           | Página de Login e Cadastro (`Login.html`)                              | Estrutura HTML                  |
 | Guilherme Barros      | Página de Suporte / FAQ (`Suporte.html`)                               | Estrutura HTML                  |
-| Gabriel de Assis      | Páginas de Políticas (Termos de Uso, Trabalhe Conosco) e Revisão Geral | Estrutura HTML / Documentação   |
+| Gabriel de Assis      | Páginas de Políticas (`TermosDeUso.html` \ `TrabalheConosco.html`) e Revisão Geral | Estrutura HTML / Documentação   |
 | Gabriel Pedro         | Planejamento da Padronização Visual (CSS - fase futura)                | Planejamento CSS                |
 
 ---
