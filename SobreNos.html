@@ -9,19 +9,19 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="Home.html">Meraki VitalSync</a>
-            <ul>
-                <a href="Login.html">Logar</a>
-                <a href="Planos.html">Planos</a>
-                <a href="Catalogo.html">Produtos</a>
-                <a href="SobreNos.html">Sobre Nós</a>
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="Home.html" class="cta-button"> Início </a></li>
+                <li><a href="Catalogo.html" class="cta-button"> Produtos </a></li>
+                <li><a href="Contato.html" class="cta-button"> Contato </a></li>
+                <li><a href="SobreNos.html" class="cta-button"> Sobre Nós </a></li>
+                <li><a href="Planos.html" class="cta-button"> Planos </a></li>
+                <li><a href="Login.html" class="cta-button"> Login </a></li>
+                <li><a href="Suporte.html" class="cta-button"> Suporte </a></li>
             </ul>
         </nav>
-    </header>
 
-    <main>
         <section id="inicio" class="hero-header">
             <div class="hero-content">
                 <h1> Meraki Vitalsync </h1>
@@ -29,10 +29,16 @@
                 <p class="intro-text"> Transformamos bem-estar corporativo em vantagem competitiva através de soluções
                     inteligentes de monitoramento biométrico para empresas que valorizam seus colaboradores.
                 </p>
-                <p> Conheça nossa solução </p>
-                <br>
+            </div>
+            <div>
+                <a href="#historia" class="solucao"> Conheça nossa solução </a>
+                <p class="gestao"> Tecnologia de ponta para gestão de saúde corporativa </p>
+                <p class="vantagens"> <strong> 99.9% Precisão | 24/7 Monitoramento | 100% Seguro </strong> </p>
             </div>
         </section>
+    </header>
+
+    <main>
         <section id="historia">
             <h2> Nossa História </h2>
             <h3> O que Significa Meraki? </h3>
@@ -51,6 +57,7 @@
                         gestão empresarial.
                     </p>
                 </div>
+                <img src="imgs/crescimento.jpg" alt="Gráfico" width="500">
             </div>
         </section>
 
@@ -65,21 +72,21 @@
                 biométricos durante atividades físicas, e o software Vitalsync armazena e processa essa informação,
                 convertendo-a em relatórios valiosos para os gestores.
             </p>
-            <p class="slogan">
+            <div class="slogan">
                 <strong> Não vendemos apenas dispositivos; fornecemos uma plataforma de gestão de saúde e performance
                     baseada em dados reais e com a dedicação Meraki.
                 </strong>
-            </p>
+            </div>
         </section>
 
         <section id="diferenciais">
             <h2> O Diferencial Meraki Vitalsync: Dados Gerenciais com Alma </h2>
-            <p> Enquanto a concorrência foca em especificações técnicas para o consumidor final, nós focamos na intenção
-                estratégica do nosso cliente B2B. A abordagem Meraki garante que a nossa solução seja construída para:
-            </p>
-
+            <p class="foco"> Enquanto a concorrência foca em especificações técnicas para o consumidor final, nós
+                focamos na intenção estratégica do nosso cliente B2B. A abordagem Meraki garante que a nossa solução
+                seja construída para: </p>
             <div>
-                <article>
+                <article id="design">
+                    <img src="imgs/escudo.png" alt="Icone de escudo" width="40" height="40">
                     <h3> Design com Propósito B2B </h3>
                     <p class="subtitle"> Confiabilidade e Conformidade </p>
                     <p> Cada aspecto, da calibração dos sensores à durabilidade do material, é desenhado para garantir a
@@ -89,7 +96,8 @@
                     </p>
                 </article>
 
-                <article>
+                <article id="tecnologia">
+                    <img src="imgs/web.png" alt="Icone de página web" width="40" height="40">
                     <h3> Tecnologia Feita com Dedicação </h3>
                     <p class="subtitle"> Plataforma de Software Intuitiva </p>
                     <p> Nossa equipe de engenharia aplica o espírito Meraki para ir além do básico. Asseguramos que os
@@ -100,7 +108,8 @@
                     </p>
                 </article>
 
-                <article>
+                <article id="conexao">
+                    <img src="imgs/pessoas.png" alt="Ícone representando pessoas" width="40" height="40">
                     <h3> Conexão Estratégica </h3>
                     <p class="subtitle"> Parceiro para Gestão de Pessoas </p>
                     <p> A verdadeira magia de Meraki está em deixar um pedaço de si mesmo no que se faz. Ao monitorar o
@@ -112,31 +121,35 @@
             </div>
         </section>
 
-        <section id="Valores">
+        <section id="valores">
             <h2> Nossos Valores </h2>
-            <p> Os pilares que sustentam nossa relação B2B </p>
+            <h3> Os pilares que sustentam nossa relação B2B </h3>
 
-            <div>
-                <article>
+            <div class="pilares">
+                <article id="paixao">
+                    <img src="imgs/coração.png" alt="Icone de coração" width="40" height="40">
                     <h3> Paixão </h3>
                     <p> Colocamos o espírito Meraki em cada componente, garantindo qualidade e precisão superiores para
                         o seu investimento.
                     </p>
                 </article>
 
-                <article>
+                <article id="excelencia">
+                    <img src="imgs/gráfico.png" alt="Icone de gráfico" width="40" height="40">
                     <h3> Excelência Consciente </h3>
                     <p> Precisão dos sensores, segurança dos dados e usabilidade do software pensados para o uso
                         corporativo. </p>
                 </article>
 
-                <article>
+                <article id="inovacao">
+                    <img src="imgs/inovação.png" alt="Icone de lâmpada" width="40" height="40">
                     <h3> Inovação com Propósito </h3>
                     <p> Tecnologia de ponta aplicada para resolver desafios reais de gestão de saúde ocupacional e
                         produtividade. </p>
                 </article>
 
-                <article>
+                <article id="transparencia">
+                    <img src="imgs/escudo.png" alt="Icone de escudo" width="40" height="40">
                     <h3> Transparência e Respeito </h3>
                     <p> Relações de confiança, honestidade sobre funcionalidades e conformidade total na gestão de
                         dados. </p>
@@ -149,26 +162,35 @@
             <p> Se a sua empresa acredita que pode transformar resultados através de uma gestão de bem-estar baseada em
                 dados, junte-se à Meraki Vitalsync.
             </p>
-            <div>
-                <a href="Planos.html">Consulte Nossos Produtos</a> |
-                <a href="Contato.html">Fale Conosco</a>
+            <div class="container-centralizado">
+                <a href="Catalogo.html" class="produtos"> Consulte Nossos Produtos </a>
+                <a href="Contato.html" class="contato"> Fale Conosco </a>
             </div>
+            <p class="dados"> <strong> 500+ Empresas Parceiras | 50k+ Usuários Ativos | 98% Satisfação </strong> </p>
         </section>
 
     </main>
 
     <footer>
-        <div class="rodape-links">
-            <p>&copy; 2025 Meraki Vitalsync. Todos os direitos reservados.</p>
+        <div class="rodape">
+            <h3> Meraki Vitalsync </h3>
+            <h4> Transformando bem-estar corporativo em vantagem competitiva através de dados estratégicos. </h4>
+
+            <address>
+                <p> vendas@merakivitalsync.com.br <br> suporte@merakivitalsync.com.br </p>
+                <p> (11) 3000-0000 (11) | 3000-0001 </p>
+                </p> Bela Vista, São Paulo - SP Brasil </p>
+            </address>
+
             <nav>
-                <ul>
+                <ul class="footer-links">
                     <li><a href="TermosDeUso.html">Termos de Uso</a></li>
-                    <li><a href="PoliticaDePrivacidade.html">Política de Privacidade</a></li>
                     <li><a href="Suporte.html">Suporte</a></li>
                     <li><a href="FAQ.html">FAQ</a></li>
                     <li><a href="Contato.html">Contato</a></li>
                     <li><a href="TrabalheConosco.html">Trabalhe Conosco</a></li>
                 </ul>
+                <p class="direitos"> &copy; 2025 Meraki Vitalsync. Todos os direitos reservados. </p>
             </nav>
         </div>
     </footer>
