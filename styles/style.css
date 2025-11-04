@@ -2,19 +2,6 @@
     --cor-de-fundo: #868686;
 }
 
-body {
-    background-color: #79827F;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-}
-
-
-html {
-    /* Isso ativa a rolagem suave para links de âncora */
-    scroll-behavior: smooth;
-}
-
-
 /* Estilização Global Acima */
 /* Cores de páginas especificas, ficará abaixo */
 
@@ -40,14 +27,25 @@ html {
 /* Politica De Privacidade - FIM */
 
 /* SobreNos - INICIO */
-.main-header {
+.page-sobrenos {
+    /* Isso ativa a rolagem suave para links de âncora */
+    scroll-behavior: smooth;
+}
+
+.page-sobrenos {
+    background-color: #79827F;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+}
+
+.page-sobrenos .main-header {
     background-image: linear-gradient(rgba(42, 40, 48, 0.8), rgba(42, 40, 48, 0.8)), url('corporativo.jpg');
     background-position: center;
     background-size: cover;
     min-height: 720px;
 }
 
-.nav-list {
+.page-sobrenos .nav-list {
     font-size: 20px;
     color: #FFFFFF;
     display: flex;
@@ -57,7 +55,7 @@ html {
     padding-right: 20px;
 }
 
-ul {
+.page-sobrenos ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -65,11 +63,11 @@ ul {
     background-color: #1f2926;
 }
 
-ul li {
+.page-sobrenos ul li {
     float: left;
 }
 
-ul li a {
+.page-sobrenos ul li a {
     display: block;
     color: #FFFFFF;
     text-align: center;
@@ -77,32 +75,32 @@ ul li a {
     text-decoration: none;
 }
 
-ul li a:hover {
+.page-sobrenos ul li a:hover {
     background-color: #37544c;
 }
 
-.hero-content h1 {
+.page-sobrenos .hero-content h1 {
     font-size: 85px;
     text-align: center;
     color: #79827F;
     margin-bottom: auto;
 }
 
-.hero-header {
+.page-sobrenos .hero-header {
     font-size: 28px;
     text-align: center;
     color: #FFFFFF;
     margin: 140px 140px 140px 140px;
 }
 
-.intro-text {
+.page-sobrenos .intro-text {
     font-size: 25px;
     text-align: center;
     color: #FFFFFF;
     margin: 0px 250px 0px 250px;
 }
 
-.solucao {
+.page-sobrenos .solucao {
     margin: 55px 0px 10px 0px;
     background-color: #35705d;
     border: none;
@@ -116,38 +114,38 @@ ul li a:hover {
     cursor: pointer;
 }
 
-.solucao:hover {
+.page-sobrenos .solucao:hover {
     box-shadow: 0 8px 16px 0 #42655b;
 }
 
-.gestao {
+.page-sobrenos .gestao {
     font-size: 20px;
     text-align: center;
     color: #FFFFFF;
     margin-top: 30px;
 }
 
-.vantagens {
+.page-sobrenos .vantagens {
     font-size: 18px;
     text-align: center;
     color: #79827F;
     margin-top: 10px;
 }
 
-#historia h2 {
+.page-sobrenos #historia h2 {
     font-size: 50px;
     color: #FFFFFF;
     text-align: center;
     margin-top: 80px;
 }
 
-#historia h3 {
+.page-sobrenos #historia h3 {
     font-size: 28px;
     color: #242424;
     text-align: center;
 }
 
-.conteudo-historia {
+.page-sobrenos .conteudo-historia {
     font-size: 24px;
     color: #FFFFFF;
     text-align: justify;
@@ -165,7 +163,7 @@ ul li a:hover {
     margin: 10px 120px 40px 120px;
 }
 
-.conteudo-historia .texto {
+.page-sobrenos .conteudo-historia .texto {
     flex: 1;
     /* Ocupa o espaço restante */
     max-width: 50%;
@@ -175,7 +173,7 @@ ul li a:hover {
     /* Define um mínimo de largura para evitar que o texto fique muito espremido em telas pequenas */
 }
 
-.conteudo-historia img {
+.page-sobrenos .conteudo-historia img {
     max-width: 70%;
     /* Define a largura máxima da imagem, por exemplo, 40% do contêiner */
     height: auto;
@@ -188,7 +186,7 @@ ul li a:hover {
     border-radius: 15px;
 }
 
-#missao {
+.page-sobrenos #missao {
     border-style: solid;
     border-width: 2px;
     border-color: #67e3bc;
@@ -200,7 +198,7 @@ ul li a:hover {
     margin: 10px 120px 40px 120px;
 }
 
-#missao h2 {
+.page-sobrenos #missao h2 {
     font-size: 40px;
     color: #FFFFFF;
     text-align: center;
@@ -208,14 +206,14 @@ ul li a:hover {
     margin-bottom: 40px;
 }
 
-#missao p {
+.page-sobrenos #missao p {
     font-size: 24px;
     color: #FFFFFF;
     text-align: center;
     margin: 10px 120px 40px 120px;
 }
 
-.slogan {
+.page-sobrenos .slogan {
     font-size: 20px;
     color: #6ca090;
     text-align: center;
@@ -223,14 +221,14 @@ ul li a:hover {
     padding: 0 20px;
 }
 
-#diferenciais {
+.page-sobrenos #diferenciais {
     font-size: 20px;
     color: #FFFFFF;
     text-align: center;
     margin: 10px 180px 30px 180px;
 }
 
-#diferenciais h2 {
+.page-sobrenos #diferenciais h2 {
     font-size: 40px;
     color: #FFFFFF;
     text-align: center;
@@ -238,19 +236,19 @@ ul li a:hover {
     margin-bottom: 40px;
 }
 
-.foco {
+.page-sobrenos .foco {
     font-size: 20px;
     color: #FFFFFF;
     text-align: center;
 }
 
-#diferenciais p {
+.page-sobrenos #diferenciais p {
     font-size: 21px;
     color: #FFFFFF;
     text-align: justify;
 }
 
-#design {
+.page-sobrenos #design {
     border-style: solid;
     border-width: 2px 2px;
     border-color: #67e3bc;
@@ -263,7 +261,7 @@ ul li a:hover {
     background-color: #1f2926;
 }
 
-#tecnologia {
+.page-sobrenos #tecnologia {
     border-style: solid;
     border-width: 1px 1px;
     border-color: #67e3bc;
@@ -276,7 +274,7 @@ ul li a:hover {
     background-color: #1f2926;
 }
 
-#conexao {
+.page-sobrenos #conexao {
     border-style: solid;
     border-width: 1px 1px;
     border-color: #67e3bc;
@@ -289,31 +287,31 @@ ul li a:hover {
     background-color: #1f2926;
 }
 
-#valores h2 {
+.page-sobrenos #valores h2 {
     font-size: 40px;
     color: #FFFFFF;
     text-align: center;
 }
 
-#valores h3 {
+.page-sobrenos #valores h3 {
     font-size: 24px;
     color: #FFFFFF;
     text-align: center;
 }
 
-#valores p {
+.page-sobrenos #valores p {
     font-size: 20px;
     color: #FFFFFF;
     text-align: left;
 }
 
-.pilares {
+.page-sobrenos .pilares {
     display: flex;
     justify-content: center;
     margin-top: 60px;
 }
 
-#paixao {
+.page-sobrenos #paixao {
     border-style: solid;
     border-width: 1px;
     border-color: #67e3bc;
@@ -326,11 +324,11 @@ ul li a:hover {
     background-color: #1f2926;
 }
 
-#paixao h3 {
+.page-sobrenos #paixao h3 {
     text-align: left;
 }
 
-#excelencia {
+.page-sobrenos #excelencia {
     border-style: solid;
     border-width: 1px 1px;
     border-color: #67e3bc;
@@ -343,11 +341,11 @@ ul li a:hover {
     background-color: #1f2926;
 }
 
-#excelencia h3 {
+.page-sobrenos #excelencia h3 {
     text-align: left;
 }
 
-#inovacao {
+.page-sobrenos #inovacao {
     border-style: solid;
     border-width: 1px 1px;
     border-color: #67e3bc;
@@ -360,11 +358,11 @@ ul li a:hover {
     background-color: #1f2926;
 }
 
-#inovacao h3 {
+.page-sobrenos #inovacao h3 {
     text-align: left;
 }
 
-#transparencia {
+.page-sobrenos #transparencia {
     border-style: solid;
     border-width: 1px 1px;
     border-color: #67e3bc;
@@ -377,11 +375,11 @@ ul li a:hover {
     background-color: #1f2926;
 }
 
-#transparencia h3 {
+.page-sobrenos #transparencia h3 {
     text-align: left;
 }
 
-#cta-final {
+.page-sobrenos #cta-final {
     border-style: solid;
     border-width: 1px;
     border-color: #67e3bc;
@@ -394,130 +392,25 @@ ul li a:hover {
     background-color: #1f2926;
 }
 
-#cta-final h2 {
+.page-sobrenos #cta-final h2 {
     font-size: 50px;
     color: #FFFFFF;
     text-align: center;
     margin: 60px 150px 30px 150px;
 }
 
-#cta-final p {
+.page-sobrenos #cta-final p {
     font-size: 20px;
     color: #FFFFFF;
     text-align: center;
     margin: 10px 180px 30px 180px;
 }
 
-.dados {
+.page-sobrenos .dados {
     font-size: 1px;
     color: #FFFFFF;
     text-align: center;
     margin: 10px 180px 40px 180px;
-}
-
-button {
-    background-color: #35705d;
-    border: none;
-    border-radius: 4px;
-    color: #FFFFFF;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 17px;
-    cursor: pointer;
-    margin: 30px 20px;
-}
-
-button:hover {
-    box-shadow: 0 8px 16px 0 #42655b;
-}
-
-.container-centralizado {
-    display: flex;
-    justify-content: center;
-}
-
-.produtos {
-    margin: 15px 20px 20px 10px;
-    background-color: #35705d;
-    border: none;
-    border-radius: 4px;
-    color: #FFFFFF;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 19px;
-    cursor: pointer;
-}
-
-.contato {
-    margin: 15px 20px 20px 10px;
-    background-color: #35705d;
-    border: none;
-    border-radius: 4px;
-    color: #FFFFFF;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 19px;
-    cursor: pointer;
-}
-
-.produtos:hover {
-    box-shadow: 0 8px 16px 0 #42655b;
-}
-
-.contato:hover {
-    box-shadow: 0 8px 16px 0 #42655b;
-}
-
-.rodape {
-    color: #FFFFFF;
-    text-align: left;
-    overflow: hidden;
-    background-color: #1f2926;
-    padding: 25px 50px;
-    flex-wrap: wrap;
-    /* Permite que os itens quebrem para a próxima linha em telas menores (muito recomendado para responsividade) */
-    text-align: left;
-}
-
-.rodape h3 {
-    font-size: 20px;
-    color: #67e3bc;
-    text-align: left;
-    margin: 15px;
-}
-
-.rodape h4 {
-    font-size: 16px;
-    color: #FFFFFF;
-    text-align: left;
-    margin: 20px 980px 20px 15px;
-}
-
-address {
-    font-size: 16px;
-    color: #FFFFFF;
-    text-align: left;
-    margin: 20px 0px 10px 15px;
-}
-
-.footer-links {
-    font-size: 18px;
-    color: #FFFFFF;
-    text-align: left;
-    margin: 0px 50px 10px 0px;
-}
-
-.direitos {
-    font-size: 15px;
-    color: #FFFFFF;
-    text-align: left;
-    margin: 15px;
 }
 
 /* SobreNos - FIM */
