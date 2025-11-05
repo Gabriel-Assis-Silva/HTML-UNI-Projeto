@@ -1,0 +1,120 @@
+/* Inicio da Estilização do Header */
+header {
+    background-color: whitesmoke;
+    padding: 10px 0;
+    border-bottom: 3px solid #4a90e2;
+}
+
+
+/* Container para organizar logo e menu */
+.header-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Fim da Estilização do Header */
+
+
+/* Inicio Estilo do logo */
+.nome-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+
+.nome-logo:hover {
+    transform: scale(1.05);
+}
+
+
+.nome-logo img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* Fim Estilo do logo */
+
+
+/* Inicio da Estilização da lista de navegação */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul li a {
+    color: #151b3d;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+}
+
+
+nav ul li a:hover {
+    background-color: rgba(74, 144, 226, 0.3);
+    transform: translateY(-2px);
+}
+
+
+nav ul li a.active {
+    background-color: #4a90e2;
+    color: #ffffff;
+}
+
+
+nav ul li a.active:hover {
+    background-color: #3a7bc8;
+    transform: scale(1.05);
+}
+
+/* Fim da Estilização do Header */
+
+/* Footer */
+footer {
+    background-color: #151b3d;
+    padding: 20px;
+    border-top: 3px solid #4a90e2;
+    margin-top: 40px;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: all 0.3s ease;
+}
+
+
+footer p {
+    text-align: center;
+    color: whitesmoke;
+}
+
+
+footer a:hover {
+    color: #4a90e2;
+    transform: scale(1.03);
+}
