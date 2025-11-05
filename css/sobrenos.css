@@ -1,0 +1,468 @@
+body {
+  background-color:#79827F;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+}
+
+.main-header {
+  background-image: linear-gradient(rgba(42, 40, 48, 0.8), rgba(42, 40, 48, 0.8)), url('corporativo.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 720px;
+}
+
+.nav-list {
+  font-size: 20px;
+  color:#FFFFFF;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#1f2926;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: #FFFFFF;     
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #37544c;    
+}
+
+.hero-content h1 {
+  font-size: 85px;    
+  text-align: center;
+  color:#79827F;
+  margin-bottom: auto;
+}
+
+.hero-header {
+  font-size: 28px;
+  text-align: center;
+  color:#FFFFFF;
+  margin: 140px 140px 140px 140px; 
+}
+
+.intro-text {
+  font-size: 25px;
+  text-align: center;
+  color:#FFFFFF;
+  margin: 0px 250px 0px 250px; 
+}
+
+.solucao {
+  margin: 55px 0px 10px 0px;
+  background-color:#35705d;
+  border: none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.solucao:hover {
+box-shadow:0 8px 16px 0 #42655b;
+}
+
+.gestao {
+  font-size: 20px;
+  text-align: center;
+  color:#FFFFFF;
+  margin-top: 30px;
+}
+
+.vantagens {
+  font-size: 18px;
+  text-align: center;
+  color:#79827F;
+  margin-top: 10px;
+}
+
+#historia h2 {
+  font-size: 50px;
+  color:#FFFFFF;
+  text-align: center;
+  margin-top: 80px;
+}
+
+#historia h3 {
+  font-size: 28px;
+  color:#242424;
+  text-align: center;
+}
+
+.conteudo-historia {
+  font-size: 24px;  
+  color:#FFFFFF;
+  text-align: justify;
+  display: flex; /* Ativa o Flexbox para alinhar os filhos (div.texto e img) */
+  flex-direction: row; /* Garante que os itens se alinhem na linha, com o texto à esquerda e a imagem à direita */
+  justify-content: space-between;  /* Distribui o espaço entre o texto e a imagem (opcional, dependendo do design) */
+  align-items: center; /* Alinha verticalmente os itens no centro, caso tenham alturas diferentes */
+  padding: 20px; 
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores (muito recomendado para responsividade) */
+  margin: 10px 120px 40px 120px; 
+}
+
+.conteudo-historia .texto {
+  flex: 1; /* Ocupa o espaço restante */
+  max-width: 50%; /* Define a largura máxima para que o texto não fique muito longo */
+  padding-right: 20px; 
+  min-width: 300px; /* Define um mínimo de largura para evitar que o texto fique muito espremido em telas pequenas */
+}
+
+.conteudo-historia img {
+  max-width: 70%; /* Define a largura máxima da imagem, por exemplo, 40% do contêiner */
+  height: auto; /* Garante que a imagem seja responsiva */
+  flex-shrink: 0; /* Evita que a imagem encolha se houver mais espaço no contêiner */
+  border-style: solid;
+  border-width: 2px;
+  border-color: #67e3bc;
+  border-radius: 15px;
+}
+
+#missao {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #67e3bc;
+  border-radius: 10px;
+  background-color: #1f2926;
+  padding: 20px 0; 
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores (muito recomendado para responsividade) */
+  margin: 10px 120px 40px 120px; 
+}
+
+#missao h2 {
+  font-size: 40px;    
+  color:#FFFFFF; 
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#missao p {
+  font-size: 24px;    
+  color:#FFFFFF; 
+  text-align: center;
+  margin: 10px 120px 40px 120px;
+}
+
+.slogan {
+  font-size: 20px;    
+  color: #6ca090; 
+  text-align: center;
+  margin: 10px 120px 40px 120px;
+  padding: 0 20px;
+}
+
+#diferenciais {
+  font-size: 20px;    
+  color:#FFFFFF; 
+  text-align: center;
+  margin: 10px 180px 30px 180px;
+}
+
+#diferenciais h2 {
+  font-size: 40px;
+  color:#FFFFFF;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+
+.foco {
+  font-size: 20px;
+  color:#FFFFFF;
+  text-align: center;
+}
+
+#diferenciais p {
+  font-size: 21px;
+  color:#FFFFFF;
+  text-align: justify;
+}
+
+#design {
+  border-style: solid;
+  border-width: 2px                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                2px;
+  border-color: #67e3bc;
+  border-radius: 10px;
+  padding: 25px 50px; 
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores (muito recomendado para responsividade) */
+  text-align: left;
+  margin: 60px 0px 60px 0px;
+  background-color: #1f2926;
+}
+
+#tecnologia {
+  border-style: solid;
+  border-width: 1px 1px;
+  border-color: #67e3bc;
+  border-radius: 10px;
+  padding: 25px 50px; 
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores (muito recomendado para responsividade) */
+  text-align: left;
+  margin: 60px 0px 60px 0px;
+  background-color: #1f2926;
+}
+
+#conexao {
+  border-style: solid;
+  border-width: 1px 1px;
+  border-color: #67e3bc;
+  border-radius: 10px;
+  padding: 25px 50px; 
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores (muito recomendado para responsividade) */
+  text-align: left;
+  margin: 60px 0px 60px 0px;
+  background-color: #1f2926;
+}
+
+#valores h2 {
+  font-size: 40px;
+  color:#FFFFFF;  
+  text-align: center;
+}
+
+#valores h3 {
+  font-size: 24px;
+  color:#FFFFFF;  
+  text-align: center;
+}
+
+#valores p {
+  font-size: 20px;
+  color:#FFFFFF;  
+  text-align: left;
+}
+
+.pilares {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+#paixao {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #67e3bc;
+  border-radius: 10px;
+  padding: 20px 35px; 
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores (muito recomendado para responsividade) */
+  text-align: left;
+  margin: 10px;
+  background-color: #1f2926;
+}
+
+#paixao h3 {
+  text-align: left;
+}
+
+#excelencia {
+  border-style: solid;
+  border-width: 1px 1px;
+  border-color: #67e3bc;
+  border-radius: 10px;
+  padding: 20px 35px; 
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores (muito recomendado para responsividade) */
+  text-align: left;
+  margin: 10px;
+  background-color: #1f2926;
+}
+
+#excelencia h3 {
+  text-align: left;
+}
+
+#inovacao {
+  border-style: solid;
+  border-width: 1px 1px;
+  border-color: #67e3bc;
+  border-radius: 10px;
+  padding: 20px 35px; 
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores (muito recomendado para responsividade) */
+  text-align: left;
+  margin: 10px;
+  background-color: #1f2926;
+}
+
+#inovacao h3 {
+  text-align: left;
+}
+
+#transparencia {
+  border-style: solid;
+  border-width: 1px 1px;
+  border-color: #67e3bc;
+  border-radius: 10px;
+  padding: 20px 35px; 
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores (muito recomendado para responsividade) */
+  text-align: left;
+  margin: 10px;
+  background-color: #1f2926;
+}
+
+#transparencia h3 {
+  text-align: left;
+}
+
+#cta-final {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #67e3bc;
+  border-radius: 10px;
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores (muito recomendado para responsividade) */
+  margin: 60px 250px 60px 250px; 
+  padding: 10px 0px;
+  text-align: center;
+  background-color: #1f2926;
+}
+
+#cta-final h2 {
+  font-size: 50px;
+  color:#FFFFFF;
+  text-align: center;
+  margin: 60px 150px 30px 150px; 
+}
+
+#cta-final p {
+  font-size: 20px;
+  color:#FFFFFF;
+  text-align: center;
+  margin: 10px 180px 30px 180px;
+}
+
+.dados {
+  font-size: 1px;
+  color:#FFFFFF;
+  text-align: center;
+  margin: 10px 180px 40px 180px;
+}
+
+button {
+  background-color:#35705d;
+  border: none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  cursor: pointer;
+  margin: 30px 20px;
+}
+
+button:hover {
+box-shadow:0 8px 16px 0 #42655b;
+}
+
+.container-centralizado {
+  display: flex;
+  justify-content: center; 
+}
+
+.produtos {
+  margin: 15px 20px 20px 10px;
+  background-color:#35705d;
+  border: none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.contato {
+  margin: 15px 20px 20px 10px;
+  background-color:#35705d;
+  border: none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.produtos:hover {
+box-shadow:0 8px 16px 0 #42655b;
+}
+
+.contato:hover {
+box-shadow:0 8px 16px 0 #42655b;
+}
+
+html {
+    scroll-behavior: smooth; /* Isso ativa a rolagem suave para links de âncora */
+}
+
+.rodape { 
+  color:#FFFFFF;
+  text-align: left;
+  overflow: hidden;
+  background-color: #1f2926;
+  padding: 25px 50px;
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores (muito recomendado para responsividade) */
+  text-align: left;
+}
+
+.rodape h3 {
+  font-size: 20px;
+  color: #67e3bc;
+  text-align: left;
+  margin: 15px;
+}
+
+.rodape h4 {
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: left;
+  margin: 20px 980px 20px 15px;
+}
+
+address {
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: left;
+  margin: 20px 0px 10px 15px;
+}
+
+.footer-links {
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: left;
+  margin: 0px 50px 10px 0px;
+}
+
+.direitos {
+  font-size: 15px;
+  color: #FFFFFF;
+  text-align: left;
+  margin: 15px;
+}
