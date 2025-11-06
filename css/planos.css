@@ -1,26 +1,26 @@
-        .claro {
-            display: flex;
-            gap: 30px;
-            justify-content: space-between
-        }
+.claro {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between
+}
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        .PFP {
-            display: flex;
-            gap: 30px;
-            justify-content: space-between
-        }
+.PFP {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between
+}
 
-        .center{
-            align-items: center;
-           text-align: center;
-        }
-        
+.center {
+    align-items: center;
+    text-align: center;
+}
+
 :root {
     /* Cores sugeridas com base na estética corporativa "Meraki VitalSync" (predominantemente azul) */
     --primary-color: #1E90FF;
@@ -82,7 +82,7 @@ h3 {
 
 
 /*=========================
-  2. HEADER/NAVBAR
+2. HEADER/NAVBAR
 =========================*/
 header {
     background-color: var(--card-background);
@@ -124,7 +124,7 @@ nav ul li a:hover {
 
 
 /*=========================
-  3. MAIN CONTENT / SECTIONS
+3. MAIN CONTENT / SECTIONS
 =========================*/
 main {
     max-width: 1200px;
@@ -159,7 +159,7 @@ section:nth-child(2) {
 }
 
 /*=========================
-  4. PRICING CARDS (ARTICLE)
+4. PRICING CARDS (ARTICLE)
 =========================*/
 
 section article {
@@ -248,7 +248,7 @@ section article p:last-of-type {
 
 
 /*=========================
-  5. CALL-TO-ACTION (CTA) BUTTONS
+5. CALL-TO-ACTION (CTA) BUTTONS
 =========================*/
 section article div {
     text-align: center;
@@ -298,7 +298,7 @@ section>div a:last-child:not(:first-child):hover {
 }
 
 /*=========================
-  6. TABLE (COMPARATIVE)
+6. TABLE (COMPARATIVE)
 =========================*/
 table {
     width: 100%;
@@ -342,7 +342,7 @@ table tbody tr td:not(:first-child) {
 
 
 /*=========================
-  7. FOOTER
+7. FOOTER
 =========================*/
 footer {
     background-color: #343a40;
@@ -383,7 +383,7 @@ footer nav ul li a:hover {
 
 
 /*=========================
-  8. RESPONSIVIDADE (Fluidez)
+8. RESPONSIVIDADE (Fluidez)
 =========================*/
 @media (max-width: 992px) {
 
