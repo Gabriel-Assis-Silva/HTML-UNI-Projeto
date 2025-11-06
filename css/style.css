@@ -107,26 +107,37 @@ nav ul li a.active:hover {
 /* Footer */
 footer {
     background-color: #151b3d;
-    padding: 20px;
+    padding: 30px 20px;
     border-top: 3px solid #4a90e2;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
+footer div {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
 
 footer a {
     text-decoration: none;
     color: whitesmoke;
     transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
+footer a:hover {
+    color: #4a90e2;
+    background-color: rgba(74, 144, 226, 0.1);
+}
 
 footer p {
     text-align: center;
     color: whitesmoke;
-}
-
-
-footer a:hover {
-    color: #4a90e2;
-    transform: scale(1.03);
+    margin-top: 20px;
+    font-size: 14px;
 }
