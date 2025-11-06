@@ -1,14 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relatório de Orçamento e Proposta Técnica de Hospedagem</title>
-    <link rel="stylesheet" href="css/style.css">
-<style>
-        
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #151b3d;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #4a90e2;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #151b3d;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #4a90e2;
+        }
+
+        h3 {
+            color: #4a90e2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        dl {
+            margin: 15px 0;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #151b3d;
+            margin-top: 10px;
+        }
+
+        dd {
+            margin-left: 20px;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th,
+        table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #4a90e2;
+            color: white;
+            font-weight: bold;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        table tr:hover {
+            background-color: #f0f0f0;
+        }
+
+        ul,
+        ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #666;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #151b3d;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            section {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+        }
     </style>
 </head>
+
 <body>
     <header>
         <h1>RELATÓRIO DE ORÇAMENTO E PROPOSTA TÉCNICA DE HOSPEDAGEM</h1>
@@ -31,7 +157,8 @@
                 <dd>1ª Entrega (Foco na Estrutura HTML)</dd>
 
                 <dt><strong>Objetivo:</strong></dt>
-                <dd>Definir as especificações e o orçamento para o registro de domínio e a contratação de serviço de hospedagem web, garantindo a disponibilidade e o desempenho do projeto em HTML.</dd>
+                <dd>Definir as especificações e o orçamento para o registro de domínio e a contratação de serviço de
+                    hospedagem web, garantindo a disponibilidade e o desempenho do projeto em HTML.</dd>
 
                 <dt><strong>Data do Relatório:</strong></dt>
                 <dd>12/10/2025</dd>
@@ -40,7 +167,8 @@
 
         <section>
             <h2>1. Análise de Opções de Hospedagem Web Compartilhada (Valores em BRL)</h2>
-            <p>Foram analisadas as principais ofertas de hospedagem compartilhada no mercado brasileiro, considerando as necessidades iniciais do projeto (site estático/baixo tráfego).</p>
+            <p>Foram analisadas as principais ofertas de hospedagem compartilhada no mercado brasileiro, considerando as
+                necessidades iniciais do projeto (site estático/baixo tráfego).</p>
 
             <table border="1">
                 <thead>
@@ -117,7 +245,8 @@
                 </tbody>
             </table>
 
-            <p><strong>Observação:</strong> Todos os planos listados incluem certificado SSL grátis, essencial para a segurança de um e-commerce.</p>
+            <p><strong>Observação:</strong> Todos os planos listados incluem certificado SSL grátis, essencial para a
+                segurança de um e-commerce.</p>
         </section>
 
         <section>
@@ -158,13 +287,19 @@
 
         <section>
             <h2>3. Proposta de Orçamento e Recomendação Técnica</h2>
-            <p>Com base na análise de custo-benefício, previsibilidade de preço e recursos (SSD Ilimitado e Suporte Nacional 24/7), a recomendação técnica para o lançamento do projeto é a seguinte:</p>
+            <p>Com base na análise de custo-benefício, previsibilidade de preço e recursos (SSD Ilimitado e Suporte
+                Nacional 24/7), a recomendação técnica para o lançamento do projeto é a seguinte:</p>
 
             <h3>Hospedagem Recomendada: Locaweb Hospedagem I ou II</h3>
-            <p><strong>Justificativa:</strong> Os planos da Locaweb oferecem o melhor custo-benefício em longo prazo, com preço de renovação idêntico ao preço inicial (R$ 5,90/mês ou R$ 10,90/mês), eliminando o alto aumento de custo comum em outros provedores após o primeiro ano. O SSD Ilimitado atende plenamente o projeto, e o Suporte Nacional é um diferencial em caso de indisponibilidade.</p>
+            <p><strong>Justificativa:</strong> Os planos da Locaweb oferecem o melhor custo-benefício em longo prazo,
+                com preço de renovação idêntico ao preço inicial (R$ 5,90/mês ou R$ 10,90/mês), eliminando o alto
+                aumento de custo comum em outros provedores após o primeiro ano. O SSD Ilimitado atende plenamente o
+                projeto, e o Suporte Nacional é um diferencial em caso de indisponibilidade.</p>
 
             <h3>Domínio Recomendado: MerakiVitalSync.com</h3>
-            <p><strong>Justificativa:</strong> A extensão .com é a mais reconhecida globalmente, conferindo maior credibilidade ao e-commerce e garantindo que não haja restrições geográficas para acesso ou expansão futura.</p>
+            <p><strong>Justificativa:</strong> A extensão .com é a mais reconhecida globalmente, conferindo maior
+                credibilidade ao e-commerce e garantindo que não haja restrições geográficas para acesso ou expansão
+                futura.</p>
 
             <h3>Sumário da Projeção de Custo Anual</h3>
             <table border="1">
@@ -216,4 +351,5 @@
         <p>Relatório gerado em 12/10/2025</p>
     </footer>
 </body>
+
 </html>
