@@ -201,6 +201,11 @@ nav ul li a.active:hover {
     transform: scale(0.95);
 }
 
+.selected-page {
+    color: var(--text-dark);
+    background-color: var(--secondary-blue);
+    border-bottom: 2px solid var(--primary-dark); /* Adjust thickness, style, and color */
+}
 /* ============================================ 4. CONTEÚDO PRINCIPAL E SEÇÕES ============================================ */
 main {
     max-width: 1200px;
