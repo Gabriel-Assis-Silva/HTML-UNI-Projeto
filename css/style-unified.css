@@ -213,6 +213,11 @@ main {
     padding: var(--spacing-md);
 }
 
+/* Expandir main quando contém wide-section */
+main:has(.wide-section) {
+    max-width: 1700px;
+}
+
 section {
     background-color: var(--bg-white);
     padding: 35px;
@@ -526,6 +531,56 @@ section:has(> article + article)>h2 {
     flex-basis: 100%;
 }
 
+/* Desabilitar flex para páginas de documentos legais (Política de Privacidade, Termos de Uso) */
+section.no-flex:has(> article + article) {
+    display: block;
+}
+
+section.no-flex article {
+    flex: none;
+    width: 100%;
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Lista em 2 colunas para planos corporativos (Business e Enterprise) */
+article.corpo-plan ul {
+    column-count: 2;
+    column-gap: 20px;
+}
+
+article.corpo-plan ul li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+/* Seção mais larga APENAS para planos corporativos */
+section.wide-section {
+    max-width: 3000px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Garantir que os cards tenham a mesma altura na seção wide */
+section.wide-section:has(> article + article) {
+    align-items: stretch;
+}
+
+/* Cards dos planos corporativos - mesma altura com botões alinhados */
+article.corpo-plan {
+    flex: 1 1 400px !important;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Empurrar a seção de investimento para baixo */
+.corpo-plan h4:last-of-type {
+    margin-top: auto;
+    padding-top: var(--spacing-lg);
+}
+
+
 .pricing-card,
 section article {
     background: var(--bg-white);
@@ -538,6 +593,12 @@ section article {
     flex-direction: column;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+}
+
+/* Override para planos corporativos - permitir crescimento */
+section.wide-section article.corpo-plan {
+    flex: 1 1 400px;
+    max-width: none;
 }
 
 .pricing-card:hover,
@@ -679,9 +740,9 @@ footer div {
 
 footer a {
     text-decoration: none;
-    color: var(--bg-light);
+    color: var(--primary-blue);
     transition: all 0.3s ease;
-    padding: 5px 10px;
+    padding: 5px 5px;
     border-radius: 5px;
 }
 
@@ -879,8 +940,4 @@ footer address {
         box-shadow: none;
         page-break-inside: avoid;
     }
-}
-
-.lembrar::after {
-    content: "Lembrar de mim";
 }
