@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Meraki Vitalsync </title>
     <link rel="stylesheet" href="css/style-unified.css">
+    <script src="scripts/light-toggle.js"></script>
     <style>
 
     </style>
@@ -15,7 +16,7 @@
     <header>
         <nav>
             <a href="Home.html" class="nome-logo">
-                <img src="imgs/logo mod.png" alt="Logo Meraki VitalSync">
+                <img src="imgs/logo mod.png" alt="Logo Meraki VitalSync" class="logoBackground">
             </a>
             <div class="header-container">
                 <ul>
@@ -23,6 +24,8 @@
                     <li><a href="Planos.html">Nossos Planos</a></li>
                     <li><a href="Login.html">Login</a></li>
                     <li><a href="Contato.html">Contato</a></li>
+                    <li><button id="theme-toggle" onclick="toggleTheme()"
+                            aria-label="Mudar para modo escuro">🌙</button></li>
                 </ul>
             </div>
         </nav>

@@ -1,43 +1,74 @@
 /* ============================================
-   MERAKI VITALSYNC - UNIFIED STYLESHEET
-   Blue/Whitesmoke Theme
+   MERAKI VITALSYNC - FOLHA DE ESTILO UNIFICADA
+   Tema Azul/Whitesmoke
    ============================================ */
 
 /* ============================================
-   1. CSS VARIABLES & RESET
+   1. VARIÁVEIS CSS & RESET
    ============================================ */
+
+/* Tema Claro (Padrão) */
 :root {
-    /* Primary Colors */
+    /* Cores Primárias */
     --primary-blue: #4a90e2;
     --primary-dark: #151b3d;
     --secondary-blue: #3a7bc8;
 
-    /* Background Colors */
+    /* Cores de Fundo */
     --bg-light: whitesmoke;
     --bg-white: #ffffff;
     --bg-section: #f8f9fa;
 
-    /* Text Colors */
+    /* Cores de Texto */
     --text-dark: #151b3d;
     --text-medium: #666;
     --text-light: #333;
 
-    /* Accent Colors */
+    /* Cores de Destaque */
     --accent-hover: rgba(74, 144, 226, 0.3);
     --accent-light: rgba(74, 144, 226, 0.1);
 
-    /* Border & Shadow */
+    /* Bordas e Sombras */
     --border-color: #e9ecef;
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15);
 
-    /* Spacing */
+    /* Espaçamento */
     --spacing-xs: 5px;
     --spacing-sm: 10px;
     --spacing-md: 20px;
     --spacing-lg: 30px;
     --spacing-xl: 40px;
+}
+
+/* Tema Escuro */
+[data-theme="dark"] {
+    /* Cores Primárias - Ajustadas para melhor contraste */
+    --primary-blue: #4d7f71;
+    /* Cor do texto, deixamos ele com um tom verde inves de azul, mas mantemos os nome da variavel para o mesmo. */
+    --primary-dark: #0d1712;
+    --secondary-blue: #829f97;
+
+    /* Cores de Fundo */
+    --bg-light: #0d1117;
+    --bg-white: #161b22;
+    --bg-section: #21262d;
+
+    /* Cores de Texto */
+    --text-dark: #e6edf3;
+    --text-medium: #c9d1d9;
+    --text-light: #e6edf3;
+
+    /* Cores de Destaque */
+    --accent-hover: rgba(91, 163, 255, 0.3);
+    --accent-light: rgba(91, 163, 255, 0.15);
+
+    /* Bordas e Sombras */
+    --border-color: #30363d;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -47,7 +78,7 @@
 }
 
 /* ============================================
-   2. BASE STYLES
+   2. ESTILOS BASE
    ============================================ */
 body {
     font-family: Arial, sans-serif;
@@ -57,7 +88,7 @@ body {
 }
 
 /* ============================================
-   3. HEADER & NAVIGATION
+   3. CABEÇALHO E NAVEGAÇÃO
    ============================================ */
 header {
     background-color: var(--bg-light);
@@ -74,7 +105,7 @@ header {
     padding: 0 var(--spacing-md);
 }
 
-/* Logo Styling */
+/* Estilização do Logo */
 .nome-logo {
     display: flex;
     align-items: center;
@@ -84,18 +115,25 @@ header {
     transition: transform 0.3s ease;
 }
 
-.nome-logo:hover {
-    transform: scale(1.05);
-}
-
-.nome-logo img {
-    height: 55px;
+.logoBackground {
+    border-radius: 8px;
     width: auto;
     object-fit: contain;
     display: block;
 }
 
-/* Navigation */
+.nome-logo:hover {
+    transform: scale(1.05);
+}
+
+.nome-logo img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* Navegação */
 nav {
     display: flex;
     align-items: center;
@@ -139,8 +177,35 @@ nav ul li a.active:hover {
     transform: scale(1.05);
 }
 
+/* Botão de Alternância de Tema */
+#theme-toggle {
+    background-color: transparent;
+    border: 2px solid var(--primary-blue);
+    color: var(--text-dark);
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    margin-left: 15px;
+    padding: 0;
+}
+
+#theme-toggle:hover {
+    background-color: var(--primary-blue);
+    transform: scale(1.1);
+}
+
+#theme-toggle:active {
+    transform: scale(0.95);
+}
+
 /* ============================================
-   4. MAIN CONTENT & SECTIONS
+   4. CONTEÚDO PRINCIPAL E SEÇÕES
    ============================================ */
 main {
     max-width: 1000px;
@@ -157,7 +222,7 @@ section {
     box-shadow: var(--shadow-md);
 }
 
-/* Hero Section (for pages like SobreNos, Home) */
+/* Seção Hero (para páginas como SobreNos, Home) */
 section.hero-header,
 section:first-child.hero-header {
     background: linear-gradient(135deg, var(--primary-dark) 0%, #2d3561 100%);
@@ -175,7 +240,7 @@ section:first-child.hero-header {
 .hero-content .subtitle {
     font-size: 24px;
     margin-bottom: 15px;
-    color: var(--bg-light);
+    color: var(--secondary-blue);
 }
 
 .hero-content .intro-text {
@@ -186,7 +251,7 @@ section:first-child.hero-header {
 }
 
 /* ============================================
-   5. TYPOGRAPHY
+   5. TIPOGRAFIA
    ============================================ */
 h1 {
     font-size: 36px;
@@ -223,7 +288,7 @@ p {
 }
 
 /* ============================================
-   6. ARTICLES & CONTENT BLOCKS
+   6. ARTIGOS E BLOCOS DE CONTEÚDO
    ============================================ */
 article {
     background-color: var(--bg-section);
@@ -244,7 +309,7 @@ article h4 {
 }
 
 /* ============================================
-   7. LISTS
+   7. LISTAS
    ============================================ */
 ul {
     padding-left: var(--spacing-md);
@@ -256,7 +321,7 @@ ul li {
     color: var(--text-medium);
 }
 
-/* Ordered List with Custom Counters (Home page style) */
+/* Lista Ordenada com Contadores Personalizados (estilo da página Home) */
 ol {
     list-style: none;
     counter-reset: step-counter;
@@ -298,7 +363,7 @@ ol li::before {
 }
 
 /* ============================================
-   8. FORMS
+   8. FORMULÁRIOS
    ============================================ */
 form {
     max-width: 700px;
@@ -351,7 +416,7 @@ textarea {
     min-height: 120px;
 }
 
-/* Checkbox Styling */
+/* Estilização de Checkbox */
 input[type="checkbox"] {
     width: auto;
     margin-right: 8px;
@@ -359,7 +424,7 @@ input[type="checkbox"] {
 }
 
 /* ============================================
-   9. BUTTONS
+   9. BOTÕES
    ============================================ */
 button,
 .btn,
@@ -386,7 +451,7 @@ a.btn:hover {
     box-shadow: var(--shadow-lg);
 }
 
-/* Secondary Button */
+/* Botão Secundário */
 .btn-secondary {
     background-color: transparent;
     color: var(--primary-blue);
@@ -399,7 +464,7 @@ a.btn:hover {
 }
 
 /* ============================================
-   10. TABLES
+   10. TABELAS
    ============================================ */
 table {
     width: 100%;
@@ -438,7 +503,7 @@ table tbody tr td:first-child {
 }
 
 /* ============================================
-   11. CARDS & PRICING (Planos page)
+   11. CARTÕES E PREÇOS (página Planos)
    ============================================ */
 .pricing-container {
     display: flex;
@@ -447,7 +512,7 @@ table tbody tr td:first-child {
     justify-content: center;
 }
 
-/* Multiple articles in a section should flex */
+/* Múltiplos artigos em uma seção devem usar flex */
 section:has(> article + article) {
     display: flex;
     flex-wrap: wrap;
@@ -456,7 +521,7 @@ section:has(> article + article) {
     align-items: flex-start;
 }
 
-section:has(> article + article) > h2 {
+section:has(> article + article)>h2 {
     width: 100%;
     flex-basis: 100%;
 }
@@ -483,7 +548,7 @@ section article:hover {
 }
 
 /* ============================================
-   12. FAQ & SUPPORT ITEMS
+   12. ITENS DE FAQ E SUPORTE
    ============================================ */
 .faq-item,
 .support-item {
@@ -509,7 +574,7 @@ section article:hover {
 }
 
 /* ============================================
-   13. IMAGES & MEDIA
+   13. IMAGENS E MÍDIA
    ============================================ */
 img {
     max-width: 100%;
@@ -517,7 +582,7 @@ img {
     display: block;
 }
 
-/* Logo Container (for multiple logos) */
+/* Container de Logos (para múltiplos logos) */
 .logos-container {
     display: flex;
     gap: var(--spacing-lg);
@@ -543,7 +608,7 @@ img {
 }
 
 /* ============================================
-   14. SPECIAL SECTIONS (SobreNos specific)
+   14. SEÇÕES ESPECIAIS (específico para SobreNos)
    ============================================ */
 .conteudo-historia {
     display: flex;
@@ -582,7 +647,7 @@ img {
     max-width: 300px;
 }
 
-/* Container for centered buttons */
+/* Container para botões centralizados */
 .container-centralizado {
     display: flex;
     justify-content: center;
@@ -592,7 +657,7 @@ img {
 }
 
 /* ============================================
-   15. FOOTER
+   15. RODAPÉ
    ============================================ */
 footer {
     background-color: var(--primary-dark);
@@ -645,7 +710,7 @@ footer address {
 }
 
 /* ============================================
-   16. UTILITY CLASSES
+   16. CLASSES UTILITÁRIAS
    ============================================ */
 .text-center {
     text-align: center;
@@ -692,7 +757,7 @@ footer address {
 }
 
 /* ============================================
-   17. RESPONSIVE DESIGN
+   17. DESIGN RESPONSIVO
    ============================================ */
 @media (max-width: 992px) {
     nav {
@@ -794,7 +859,7 @@ footer address {
 
 
 /* ============================================
-   18. PRINT STYLES
+   18. ESTILOS DE IMPRESSÃO
    ============================================ */
 @media print {
 
