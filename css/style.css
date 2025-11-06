@@ -430,6 +430,9 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
+.option-fix {
+    background-color: var(--primary-blue);
+}
 /* ============================================ 9. BOTÕES ============================================ */
 button,
 .btn,

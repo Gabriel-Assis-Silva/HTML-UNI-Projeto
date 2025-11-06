@@ -7,6 +7,7 @@
     <title>Trabalhe Conosco - Meraki</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="scripts/light-toggle.js"></script>
+    <script src="scripts/script.js"></script>
     <style>
 
     </style>
@@ -230,21 +231,21 @@
 
                 <div>
                     <label for="vaga">Vaga de Interesse:</label>
-                    <select id="vaga" name="vaga" required>
-                        <option value="">Selecione uma vaga</option>
-                        <option value="dev-fullstack">Desenvolvedor Full Stack</option>
-                        <option value="eng-dados">Engenheiro de Dados</option>
-                        <option value="cientista-dados">Cientista de Dados / IA</option>
-                        <option value="eng-iot">Engenheiro de IoT</option>
-                        <option value="devops">DevOps Engineer</option>
-                        <option value="qa">QA / Tester</option>
-                        <option value="ux-ui">UX/UI Designer</option>
-                        <option value="product-manager">Product Manager</option>
-                        <option value="vendas">Executivo de Vendas B2B</option>
-                        <option value="customer-success">Customer Success Manager</option>
-                        <option value="marketing">Analista de Marketing Digital</option>
-                        <option value="suporte">Analista de Suporte Técnico</option>
-                        <option value="outros">Banco de Talentos (outras áreas)</option>
+                    <select id="vaga" name="vaga" class="option-fix" required>
+                        <option class="option-fix" value="">Selecione uma vaga</option>
+                        <option class="option-fix" value="dev-fullstack">Desenvolvedor Full Stack</option>
+                        <option class="option-fix" value="eng-dados">Engenheiro de Dados</option>
+                        <option class="option-fix" value="cientista-dados">Cientista de Dados / IA</option>
+                        <option class="option-fix" value="eng-iot">Engenheiro de IoT</option>
+                        <option class="option-fix" value="devops">DevOps Engineer</option>
+                        <option class="option-fix" value="qa">QA / Tester</option>
+                        <option class="option-fix" value="ux-ui">UX/UI Designer</option>
+                        <option class="option-fix" value="product-manager">Product Manager</option>
+                        <option class="option-fix" value="vendas">Executivo de Vendas B2B</option>
+                        <option class="option-fix" value="customer-success">Customer Success Manager</option>
+                        <option class="option-fix" value="marketing">Analista de Marketing Digital</option>
+                        <option class="option-fix" value="suporte">Analista de Suporte Técnico</option>
+                        <option class="option-fix" value="outros">Banco de Talentos (outras áreas)</option>
                     </select>
                 </div>
 
@@ -263,7 +264,7 @@
                     <label for="lgpd">Autorizo o uso dos meus dados para fins de recrutamento, conforme a LGPD</label>
                 </div>
 
-                <button type="submit">Enviar Candidatura</button>
+                <button type="submit" onclick="EnviarMensagemII()">Enviar Candidatura</button>
             </form>
         </section>
 
