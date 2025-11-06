@@ -713,7 +713,7 @@ img {
     padding-bottom: 56.25%;
     /* 16:9 aspect ratio */
     height: 0;
-    overflow: hidden;
+    overflow: hidden; /* overflow é utilizado para esconder o conteúdo que ultrapassa o tamanho do container */
     max-width: 900px;
     margin: 0 auto;
     border-radius: 12px;
