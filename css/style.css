@@ -624,7 +624,7 @@ section.confianca article:hover {
 }
 
 /* Estilos de solicitação de cotação */
-.quotacao-section {
+.secondary-section {
     text-align: center;
     padding: var(--spacing-xl) 0;
 }
