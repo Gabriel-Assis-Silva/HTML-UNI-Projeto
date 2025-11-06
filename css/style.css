@@ -1,3 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+}
+
+
 /* Inicio da Estilização do Header */
 header {
     background-color: whitesmoke;
@@ -8,6 +21,7 @@ header {
 
 /* Container para organizar logo e menu */
 .header-container {
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -25,7 +39,6 @@ header {
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 8px;
-    transition: transform 0.3s ease;
 }
 
 
@@ -35,7 +48,7 @@ header {
 
 
 .nome-logo img {
-    height: 50px;
+    height: 55px;
     width: auto;
     object-fit: contain;
     display: block;
@@ -75,7 +88,6 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: rgba(74, 144, 226, 0.3);
-    transform: translateY(-2px);
 }
 
 
